@@ -1,110 +1,83 @@
+import Link from "next/link";
 import Image from "next/image";
 
-export default function Footer({ t, language }) {
+import {
+  FaPhone,
+  FaMapMarked,
+  FaMailBulk,
+  FaInstagram,
+  FaFacebookF,
+} from "react-icons/fa";
+
+export const Footer = () => {
   return (
-    <footer className="bg-gray-200 text-black py-12 px-4">
-      <div className="max-w-7xl mx-auto">
-        <div className="grid md:grid-cols-4 gap-8 mb-8">
-          <div className="text-center md:text-left border-b border-gray-500 pb-8 md:pb-0 md:border-b-0 lg:border-r lg:border-gray-500">
-            <div className="flex justify-center md:justify-start mb-4">
-              <Image
-                src="/logo-transparent.png"
-                alt="Edu-Web"
-                width={120}
-                height={120}
-                className="object-contain"
-              />
+    <footer className="px-3 py-8 text-black transition-colors duration-200 bg-yellow-500">
+      <div className="flex flex-col">
+        <div className="h-px mx-auto rounded-full md:hidden mt-7 w-11"></div>
+        <div className="flex flex-col mt-4 md:mt-0 md:flex-row">
+          <div className="flex flex-col flex-wrap text-sm items-center justify-between flex-1 border-gray-100 md:items-end md:border-r md:pr-5">
+            <div className="flex flex-row items-center">
+              <FaPhone size={25} />
+              <Link className="ml-2 py-3 px-1" href="tel:+542324685830">
+                +542324685830
+              </Link>
             </div>
-            <p className="text-gray-900 text-sm italic">
-              {t.footer.description}
-            </p>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4">
-              {language === "es"
-                ? "Enlaces"
-                : language === "en"
-                ? "Links"
-                : "Links"}
-            </h4>
-            <ul className="space-y-2 text-gray-900 text-sm">
-              <li>
-                <a
-                  href="#servicios"
-                  className="hover:text-gray-600 transition-colors"
-                >
-                  {t.nav.servicios}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#nosotros"
-                  className="hover:text-gray-600 transition-colors"
-                >
-                  {t.nav.nosotros}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#galeria"
-                  className="hover:text-gray-600 transition-colors"
-                >
-                  {t.nav.galeria}
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#faq"
-                  className="hover:text-gray-600 transition-colors"
-                >
-                  {t.nav.faq}
-                </a>
-              </li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4">{t.contact.info.phone}</h4>
-            <ul className="space-y-2 text-gray-900 text-sm">
-              <li>📱 +5493757624576</li>
-              <li>📧 arielramirezz18@gmail.com</li>
-              <li>⏰ {t.contact.info.hoursValue}</li>
-            </ul>
-          </div>
-          <div>
-            <h4 className="font-bold mb-4">
-              {language === "es"
-                ? "Síguenos"
-                : language === "en"
-                ? "Follow Us"
-                : "Siga-nos"}
-            </h4>
-            <div className="flex gap-4">
-              <a
-                href="https://www.instagram.com/tras.ladosariel/"
-                className="text-gray-900 hover:text-gray-600 transition-colors"
-                aria-label="Instagram"
-                target="_blank"
-                rel="noopener noreferrer"
+            <div className="flex flex-row items-center">
+              <FaMapMarked size={25} />
+              <Link
+                href="https://goo.gl/maps/FkK3RhJxjetRXgJj9"
+                target="_blanck"
               >
-                <svg
-                  className="w-6 h-6"
-                  fill="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
-                </svg>
-              </a>
+                <p className="py-3 px-1 ml-2">24 Nro 578, Mercedes Bs As</p>
+              </Link>
+            </div>
+            <div className="flex flex-row items-center">
+              <FaMailBulk size={25} />
+              <Link href="mailto:info@eliaspropiedades.com.ar" target="_blanck">
+                <p className="py-3 px-1 ml-2">info@eliaspropiedades.com.ar</p>
+              </Link>
             </div>
           </div>
-        </div>
-        <div className="border-t border-gray-700 pt-8 text-center text-gray-900 text-sm">
-          <p>
-            © {new Date().getFullYear()} Transfer Iguazú A&E. {t.footer.rights}.
-          </p>
+          <div className="h-px mx-auto mt-4 rounded-full md:hidden w-11 "></div>
+          <div className="flex flex-col items-center justify-center flex-1 mt-7 md:mt-0 md:pl-5">
+            <Link href="/">
+              <p className="flex flex-col justify-center items-center">
+                {/* <Image
+                  src={logo}
+                  height={120}
+                  width={120}
+                  alt="logo"
+                  style={{ objectFit: "cover", width: "100%", height: "auto" }}
+                  priority={true}
+                  className=""
+                /> */}
+              </p>
+              <div className="flex flex-col justify-center items-center mt-5 p-2 border-t border-t-neutral-50">
+                <p className="text-xs text-white">Servicios Inmobiliarios</p>
+                <p className="text-xs text-white">Matricula 4019</p>
+              </div>
+            </Link>
+          </div>
+          <div className="h-px mx-auto mt-4 rounded-full md:hidden w-11"></div>
+          <div className="flex items-center justify-center flex-1 mt-4 border-gray-100 md:mt-0 md:border-l">
+            <Link
+              href="https://instagram.com/eliaslopezpropiedades"
+              target="_blank"
+            >
+              <FaInstagram className="mr-1" size={25} />
+            </Link>
+            <Link
+              href="https://www.facebook.com/people/Elias-Lopez-Propiedades/100095155822919/"
+              target="_blank"
+            >
+              <FaFacebookF className="mr-1" size={25} />
+            </Link>
+          </div>
         </div>
       </div>
     </footer>
   );
-}
+};
 
+// export default for easier importing in pages
+export default Footer;

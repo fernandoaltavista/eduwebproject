@@ -1,0 +1,22 @@
+[   
+    {
+    "key":1,
+    "name": "Colegios",
+    "href": "/propiedades/"
+    },
+    {
+    "key":2,
+    "name": "Mision",
+    "href": "/propiedades/alquiler"
+    },
+    {
+    "key":3,
+    "name": "Servicios",
+    "href": "/propiedades/venta"
+    },
+    {
+    "key":4,
+    "name": "Contacto",
+    "href": "/contact"
+    }
+]

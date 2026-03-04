@@ -14,3 +14,55 @@
 }
 
 /* custom utilities can be added below if needed */
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 5px;
+  top: 0;
+  right: 0;
+  z-index: 999;
+  position: fixed;
+  width: 100%;
+  transition: 0.5s;
+}
+.item {
+  display: inline-flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 15px;
+  margin-right: 15px;
+  padding: 10px;
+}
+.menu-mobile {
+  display: none;
+}
+.menu-logo {
+  z-index: 999;
+}
+@media (max-width: 850px) {
+  .sidebar {
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    position: fixed;
+    right: -100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+    background: linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+  }
+  .active {
+    right: 0;
+    transition: 0.5s;
+    background: linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  }
+  .menu-mobile {
+    display: block;
+  }
+}

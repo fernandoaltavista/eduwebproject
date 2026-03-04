@@ -1,8 +1,8 @@
-import Hero from "../components/Hero";
-import Navbar from "../components/Navbar";
-import MainContent from "../components/MainContent";
-import Features from "../components/Features";
-import Footer from "../components/Footer";
+import Hero from "@/components/Hero";
+import Navbar from "@/components/Navbar";
+import MainContent from "@/components/MainContent";
+import Features from "@/components/Features";
+import Footer from "@/components/Footer";
 
 export default function Home() {
   const heroData = {
@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <>
-      <Navbar />
+
       <Hero
         title={heroData.title}
         subtitle={heroData.subtitle}
@@ -27,7 +27,7 @@ export default function Home() {
         </p>
       </MainContent>
       <Features />
-      <Footer />
+
     </>
   );
 }
