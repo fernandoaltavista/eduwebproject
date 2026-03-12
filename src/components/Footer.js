@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-
+import logo from "./../../public/logo.png";
 import {
   FaPhone,
   FaMapMarked,
@@ -11,14 +11,18 @@ import {
 
 export const Footer = () => {
   return (
-    <footer className="px-3 py-8 text-black transition-colors duration-200 bg-yellow-500">
+    // example applying the custom palette via Tailwind
+    <footer className="px-3 py-8 bg-brand-dark text-brand-light transition-colors duration-200">
       <div className="flex flex-col">
         <div className="h-px mx-auto rounded-full md:hidden mt-7 w-11"></div>
         <div className="flex flex-col mt-4 md:mt-0 md:flex-row">
           <div className="flex flex-col flex-wrap text-sm items-center justify-between flex-1 border-gray-100 md:items-end md:border-r md:pr-5">
             <div className="flex flex-row items-center">
               <FaPhone size={25} />
-              <Link className="ml-2 py-3 px-1" href="tel:+542324685830">
+              <Link
+                className="ml-2 py-3 px-1 hover:text-brand-beige"
+                href="tel:+542324685830"
+              >
                 +542324685830
               </Link>
             </div>
@@ -26,15 +30,19 @@ export const Footer = () => {
               <FaMapMarked size={25} />
               <Link
                 href="https://goo.gl/maps/FkK3RhJxjetRXgJj9"
-                target="_blanck"
+                target="_blank"
               >
-                <p className="py-3 px-1 ml-2">24 Nro 578, Mercedes Bs As</p>
+                <p className="py-3 px-1 ml-2 text-brand-light">
+                  24 Nro 578, Mercedes Bs As
+                </p>
               </Link>
             </div>
             <div className="flex flex-row items-center">
               <FaMailBulk size={25} />
-              <Link href="mailto:info@eliaspropiedades.com.ar" target="_blanck">
-                <p className="py-3 px-1 ml-2">info@eliaspropiedades.com.ar</p>
+              <Link href="mailto:info@eliaspropiedades.com.ar" target="_blank">
+                <p className="py-3 px-1 ml-2 text-brand-light">
+                  info@eliaspropiedades.com.ar
+                </p>
               </Link>
             </div>
           </div>
@@ -42,7 +50,7 @@ export const Footer = () => {
           <div className="flex flex-col items-center justify-center flex-1 mt-7 md:mt-0 md:pl-5">
             <Link href="/">
               <p className="flex flex-col justify-center items-center">
-                {/* <Image
+                <Image
                   src={logo}
                   height={120}
                   width={120}
@@ -50,16 +58,18 @@ export const Footer = () => {
                   style={{ objectFit: "cover", width: "100%", height: "auto" }}
                   priority={true}
                   className=""
-                /> */}
+                />
               </p>
               <div className="flex flex-col justify-center items-center mt-5 p-2 border-t border-t-neutral-50">
-                <p className="text-xs text-white">Servicios Inmobiliarios</p>
-                <p className="text-xs text-white">Matricula 4019</p>
+                <p className="text-xs ">
+                  Servicios Inmobiliarios
+                </p>
+                <p className="text-xs ">Matricula 4019</p>
               </div>
             </Link>
           </div>
           <div className="h-px mx-auto mt-4 rounded-full md:hidden w-11"></div>
-          <div className="flex items-center justify-center flex-1 mt-4 border-gray-100 md:mt-0 md:border-l">
+          <div className="flex items-center justify-center flex-1 mt-4 border-gray-100 md:mt-0 md:border-l md:pl-5">
             <Link
               href="https://instagram.com/eliaslopezpropiedades"
               target="_blank"
@@ -79,5 +89,4 @@ export const Footer = () => {
   );
 };
 
-// export default for easier importing in pages
 export default Footer;

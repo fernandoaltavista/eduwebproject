@@ -6,7 +6,7 @@ import links from "@/services/links";
 import Image from "next/image";
 import Hamburger from "hamburger-react";
 import { usePathname } from "next/navigation";
-import { FaInstagram, FaFacebookF, FaPhone } from "react-icons/fa";
+import { FaPhone } from "react-icons/fa";
 
 
 export const Navbar = ({ color }) => {
@@ -34,7 +34,7 @@ export const Navbar = ({ color }) => {
     <nav
       className={
         homePage && navBgColor
-          ? " from-neutral-950 to-gray-600 nav fixed shadow-xl font-semibold text-black transition duration-1000 ease-out"
+          ? " from-neutral-100 to-gray-300 nav fixed shadow-xl font-semibold text-black transition duration-1000 ease-out"
           : `${color} nav fixed shadow-xl font-semibold transition duration-1000 ease-out`
       }
     >
@@ -68,25 +68,12 @@ export const Navbar = ({ color }) => {
             <Link href="tel:+542324685830">
               <FaPhone className="mr-2 ml-2" size={25} />
             </Link>
-            <Link
-              href="https://instagram.com/eliaslopezpropiedades"
-              target="_blank"
-            >
-              <FaInstagram className="mr-2 ml-2" size={25} />
-            </Link>
-
-            <Link
-              href="https://www.facebook.com/people/Elias-Lopez-Propiedades/100095155822919/"
-              target="_blank"
-            >
-              <FaFacebookF className="mr-2 ml-2" size={25} />
-            </Link>
           </li>
         </ul>
       </div>
 
       <div className="menu-mobile">
-        <Hamburger toggled={isOpen} toggle={setOpen} color={"#FFFFFF"} />
+        <Hamburger toggled={isOpen} toggle={setOpen} color={"#000"} />
       </div>
     </nav>
   );

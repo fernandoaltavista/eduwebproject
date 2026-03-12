@@ -4,6 +4,12 @@
 :root {
   --background: #ffffff;
   --foreground: #171717;
+  /* custom color palette variables */
+  --color-brand-dark: #222830;
+  --color-brand-light: #b0b5b5;
+  --color-brand-beige: #ecbd8b;
+  --color-brand-orange: #f4841a;
+  --color-brand-teal: #004c56;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -53,12 +59,12 @@
     align-items: center;
     justify-content: center;
     transition: 0.3s;
-    background: linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+    background: white;
   }
   .active {
     right: 0;
     transition: 0.5s;
-    background: linear-gradient(rgb(55, 65, 81), rgb(17, 24, 39), rgb(0, 0, 0));
+    background: white;
 
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   }
@@ -66,3 +72,16 @@
     display: block;
   }
 }
+
+/* custom color utilities using CSS variables */
+.bg-brand-dark { background-color: var(--color-brand-dark); }
+.bg-brand-light { background-color: var(--color-brand-light); }
+.bg-brand-beige { background-color: var(--color-brand-beige); }
+.bg-brand-orange { background-color: var(--color-brand-orange); }
+.bg-brand-teal { background-color: var(--color-brand-teal); }
+
+.text-brand-dark { color: var(--color-brand-dark); }
+.text-brand-light { color: var(--color-brand-light); }
+.text-brand-beige { color: var(--color-brand-beige); }
+.text-brand-orange { color: var(--color-brand-orange); }
+.text-brand-teal { color: var(--color-brand-teal); }

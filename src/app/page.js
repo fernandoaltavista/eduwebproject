@@ -1,14 +1,14 @@
 import Hero from "@/components/Hero";
-import Navbar from "@/components/Navbar";
 import MainContent from "@/components/MainContent";
+import SchoolesGrid from "@/components/SchoolesGrid";
 import Features from "@/components/Features";
-import Footer from "@/components/Footer";
+import ServicesSection from "@/components/ServicesSection";
 
 export default function Home() {
   const heroData = {
     title: "Bienvenido a Edu Web",
     subtitle: "Aprende algo nuevo cada día",
-    imageSrc: "/hero.jpg", // coloca tu imagen en la carpeta public
+    imageSrc: "/hero-2.jpg", // coloca tu imagen en la carpeta public
     imageAlt: "Fondo educativo",
   };
 
@@ -22,10 +22,9 @@ export default function Home() {
         imageAlt={heroData.imageAlt}
       />
       <MainContent>
-        <p className="text-red-800 text-center ">
-          Aquí puedes añadir más secciones o contenido principal de la página.
-        </p>
+       <ServicesSection />
       </MainContent>
+      <SchoolesGrid />
       <Features />
 
     </>

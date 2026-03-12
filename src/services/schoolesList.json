@@ -1,0 +1,27 @@
+[   
+    {
+    "key":1,
+    "name": "Santa Ana",
+    "description": "Descripcion"
+    },
+    {
+    "key":2,
+    "name": "San Juan",
+    "description": "Descripcion"
+    },
+    {
+    "key":3,
+    "name": "San Antonio",
+    "description": "Descripcion"
+    },
+    {
+    "key":4,
+    "name": "Misericordia",
+    "description": "Descripcion"
+    },
+     {
+    "key":5,
+    "name": "San Patricio",
+    "description": "Descripcion"
+    }
+]
