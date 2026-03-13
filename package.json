@@ -9,7 +9,10 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@floating-ui/react-dom": "^2.1.8",
     "@tailwindcss/postcss": "^4.2.1",
+    "embla-carousel-autoplay": "^8.6.0",
+    "embla-carousel-react": "^8.6.0",
     "hamburger-react": "^2.5.2",
     "next": "15.2.3",
     "react": "^19.0.0",

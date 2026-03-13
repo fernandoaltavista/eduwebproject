@@ -12,11 +12,11 @@ import {
 export const Footer = () => {
   return (
     // example applying the custom palette via Tailwind
-    <footer className="px-3 py-8 bg-brand-dark text-brand-light transition-colors duration-200">
+    <footer className="px-3 py-8 bg-brand-orange text-brand-dark transition-colors duration-200">
       <div className="flex flex-col">
         <div className="h-px mx-auto rounded-full md:hidden mt-7 w-11"></div>
         <div className="flex flex-col mt-4 md:mt-0 md:flex-row">
-          <div className="flex flex-col flex-wrap text-sm items-center justify-between flex-1 border-gray-100 md:items-end md:border-r md:pr-5">
+          <div className="flex flex-col flex-wrap text-sm items-center justify-between flex-1 border-t-gray-950 md:items-end md:border-r md:pr-5">
             <div className="flex flex-row items-center">
               <FaPhone size={25} />
               <Link
@@ -32,7 +32,7 @@ export const Footer = () => {
                 href="https://goo.gl/maps/FkK3RhJxjetRXgJj9"
                 target="_blank"
               >
-                <p className="py-3 px-1 ml-2 text-brand-light">
+                <p className="py-3 px-1 ml-2 text-brand-dark">
                   24 Nro 578, Mercedes Bs As
                 </p>
               </Link>
@@ -40,7 +40,7 @@ export const Footer = () => {
             <div className="flex flex-row items-center">
               <FaMailBulk size={25} />
               <Link href="mailto:info@eliaspropiedades.com.ar" target="_blank">
-                <p className="py-3 px-1 ml-2 text-brand-light">
+                <p className="py-3 px-1 ml-2 text-brand-dark">
                   info@eliaspropiedades.com.ar
                 </p>
               </Link>
@@ -60,16 +60,14 @@ export const Footer = () => {
                   className=""
                 />
               </p>
-              <div className="flex flex-col justify-center items-center mt-5 p-2 border-t border-t-neutral-50">
-                <p className="text-xs ">
-                  Servicios Inmobiliarios
-                </p>
+              <div className="flex flex-col justify-center items-center mt-5 p-2 border-t border-t-gray-950">
+                <p className="text-xs ">Servicios Inmobiliarios</p>
                 <p className="text-xs ">Matricula 4019</p>
               </div>
             </Link>
           </div>
           <div className="h-px mx-auto mt-4 rounded-full md:hidden w-11"></div>
-          <div className="flex items-center justify-center flex-1 mt-4 border-gray-100 md:mt-0 md:border-l md:pl-5">
+          <div className="flex items-center justify-center flex-1 mt-4 border-t-gray-950 md:mt-0 md:border-l md:pl-5">
             <Link
               href="https://instagram.com/eliaslopezpropiedades"
               target="_blank"

@@ -74,6 +74,38 @@
 }
 
 /* custom color utilities using CSS variables */
+
+/* Force hover colors for buttons */
+.hero-button-1:hover {
+  background-color: #b0b5b5 !important;
+  color: #222830 !important;
+}
+
+.hero-button-2:hover {
+  background-color: #222830 !important;
+  color: white !important;
+}
+/* Embla Carousel CSS */
+.embla {
+  overflow: hidden;
+}
+.embla__container {
+  display: flex;
+}
+.embla__slide {
+  flex: 0 0 100%;
+  min-width: 0;
+}.bg-brand-dark { background-color: var(--color-brand-dark); }
+.bg-brand-light { background-color: var(--color-brand-light); }
+.bg-brand-beige { background-color: var(--color-brand-beige); }
+.bg-brand-orange { background-color: var(--color-brand-orange); }
+.bg-brand-teal { background-color: var(--color-brand-teal); }
+
+.text-brand-dark { color: var(--color-brand-dark); }
+.text-brand-light { color: var(--color-brand-light); }
+.text-brand-beige { color: var(--color-brand-beige); }
+.text-brand-orange { color: var(--color-brand-orange); }
+.text-brand-teal { color: var(--color-brand-teal); }
 .bg-brand-dark { background-color: var(--color-brand-dark); }
 .bg-brand-light { background-color: var(--color-brand-light); }
 .bg-brand-beige { background-color: var(--color-brand-beige); }

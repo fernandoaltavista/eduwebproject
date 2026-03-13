@@ -3,6 +3,8 @@ import MainContent from "@/components/MainContent";
 import SchoolesGrid from "@/components/SchoolesGrid";
 import Features from "@/components/Features";
 import ServicesSection from "@/components/ServicesSection";
+import Carousel from "@/components/Carousel";
+import Service from "@/components/Service";
 
 export default function Home() {
   const heroData = {
@@ -24,6 +26,7 @@ export default function Home() {
       <MainContent>
        <ServicesSection />
       </MainContent>
+      <Service />
       <SchoolesGrid />
       <Features />
 

@@ -18,11 +18,11 @@ export default function Hero({
             a id nisi.
           </p>
           <div className="flex gap-4">
-            <button className="bg-brand-dark hover:bg-brand-light text-white cursor-pointer font-medium rounded-4xl px-5 py-3">
+            <button className="bg-brand-dark text-white cursor-pointer font-medium rounded-4xl px-5 py-3 hover:bg-brand-light hover:text-brand-dark transition-all duration-300 hover:scale-105 hero-button-1">
               Contactanos
             </button>
 
-            <button className="bg-brand-light hover:bg-brand-dark text-brand-dark cursor-pointer font-medium rounded-4xl px-5 py-3">
+            <button className="bg-brand-light hover:bg-brand-dark text-brand-dark hover:text-white cursor-pointer font-medium rounded-4xl px-5 py-3 transition-all duration-300 hover:scale-105 hero-button-2">
               Acceso a Colegios
             </button>
           </div>

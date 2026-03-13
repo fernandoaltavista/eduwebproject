@@ -13,13 +13,13 @@ const SchoolesGrid = () => {
         {schoolesList.map(({ key, name, description }) => (
           <div
             key={key}
-            className="bg-white rounded-lg shadow-md overflow-hidden"
+            className="bg-white rounded-lg shadow-md overflow-hidden text-center p-4 flex flex-col items-center justify-center"
           >
             <Image src={logo} alt="example" width={30} height={30} />
-            <div className="p-4">
-              <h3 className="text-xl font-semibold mb-2">{name}</h3>
-              <p className="text-gray-600">{description}</p>
-            </div>
+            
+              <h3 className="text-xl font-semibold mb-2 p-3">{name}</h3>
+              <p className="text-gray-600 p-2">{description}</p>
+            
           </div>
         ))}
       </div>
