@@ -2,7 +2,7 @@
 
 ## Descripción del Proyecto
 
-Este proyecto es una **landing page** (página de aterrizaje) para un sitio web educativo, desarrollado utilizando **Next.js**, un framework de React para aplicaciones web. Está diseñado para promocionar servicios educativos, mostrar características destacadas, y facilitar el contacto con los usuarios. Es ideal para principiantes en desarrollo web con Next.js, ya que incluye componentes reutilizables, estilos con Tailwind CSS, y una estructura modular.
+Este proyecto es una **landing page** para un sitio web educativo, desarrollado utilizando **Next.js**, un framework de React para aplicaciones web. Está diseñado para promocionar servicios educativos, mostrar características destacadas, y facilitar el contacto con los usuarios. Es ideal para principiantes en desarrollo web con Next.js, ya que incluye componentes reutilizables, estilos con Tailwind CSS, y una estructura modular.
 
 La landing page incluye secciones como un hero (sección principal), navegación, características, servicios, carrusel de imágenes, formulario de contacto, y un pie de página. También integra un botón de WhatsApp para contacto directo.
 
