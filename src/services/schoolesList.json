@@ -1,27 +1,140 @@
-[   
-    {
-    "key":1,
-    "name": "Santa Ana",
-    "description": "Descripcion"
-    },
-    {
-    "key":2,
-    "name": "San Juan",
-    "description": "Descripcion"
-    },
-    {
-    "key":3,
-    "name": "San Antonio",
-    "description": "Descripcion"
-    },
-    {
-    "key":4,
-    "name": "Misericordia",
-    "description": "Descripcion"
-    },
-     {
-    "key":5,
+[
+  {
+    "key": 1,
+    "name": "Montessori",
+    "image": "/montessorilujan.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=montessorilujan"
+  },
+  {
+    "key": 2,
+    "name": "Instituto San Vicente Pallotti",
+    "image": "/pompeyapallotti.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=pompeyapallotti"
+  },
+  {
+    "key": 3,
+    "name": "Padre Ansaldo",
+    "image": "/parroquial.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=parroquial"
+  },
+  {
+    "key": 4,
     "name": "San Patricio",
-    "description": "Descripcion"
-    }
+    "image": "/sanpatricio.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=sanpatricio"
+  },
+  {
+    "key": 5,
+    "name": "San Antonio",
+    "image": "/sanantoniomercedes.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=sanantoniomercedes"
+  },
+  {
+    "key": 6,
+    "name": "San Luis",
+    "image": "/sanluis.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=sanluis"
+  },
+  {
+    "key": 7,
+    "name": "Camila Rolon",
+    "image": "/camilarolon.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=camilarolon"
+  },
+ {
+    "key": 8,
+    "name": "Misericordia (Mercedes)",
+    "image": "/misericordiamercedes.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=misericordia"
+  },
+{
+    "key": 9,
+    "name": "Ryan's College",
+    "image": "/ryanscollege.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=ryanscollege"
+  },
+{
+    "key": 10,
+    "name": "Instituto San Luis Gonzaga",
+    "image": "/sanluisgonzaga.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=sanluisgonzaga"
+  },
+{
+    "key": 11,
+    "name": "Instituto Nuestra Señora de Fátima (Castelar)",
+    "image": "/fatimacastelar.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=fatimacastelar"
+  },
+{
+    "key": 12,
+    "name": "Santa Maria Asunción",
+    "image": "/santamariaasuncion.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=santamariaasuncion"
+  },
+{
+    "key": 13,
+    "name": "Jean Piaget",
+    "image": "/jeanpiagetlujan.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=jeanpiagetlujan"
+  },
+  {
+    "key": 14,
+    "name": "Sagrada Familia",
+    "image": "/sagradafamilia.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=sagradafamilia"
+  },
+  {
+    "key": 15,
+    "name": "Misericordia (Chivilcoy)",
+    "image": "/misericordiachivilcoy.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=misericordiachivilcoy"
+  },
+  {
+    "key": 16,
+    "name": "Los Tilos",
+    "image": "/lostilos.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=lostilos"
+  },
+  {
+    "key": 17,
+    "name": "Nuestra Señora de la Misericordia La Plata",
+    "image": "/misericordialaplata.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=misericordialaplata"
+  },
+ {
+    "key": 18,
+    "name": "Escuela Maximina Martinez",
+    "image": "/escuelamaximinamartinez.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=escuelamaximinamartinez"
+  },
+{
+    "key": 29,
+    "name": "Instituto Nuestra Señora del Carmen",
+    "image": "/institutocarmensuipacha.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=institutocarmensuipacha"
+  },
+{
+    "key": 20,
+    "name": "Instituto Privado Francisco de Asis",
+    "image": "/franciscoasis.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=franciscoasis"
+  },
+{
+    "key": 21,
+    "name": "Vamos Creciendo",
+    "image": "/vamoscreciendo.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=vamoscreciendo"
+  },
+{
+    "key": 22,
+    "name": "Nuestra Señora de Luján (San Andrés de Giles)",
+    "image": "/nuestrasenoralujangiles.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=nuestrasenoralujangiles"
+  },
+{
+    "key": 23,
+    "name": "Escuela Canónigo José Cardijn",
+    "image": "/escuelacardijn.png",
+    "link": "https://www.eduweb.com.ar/admin/Default.aspx?cliente=escuelacardijn"
+  }
 ]
