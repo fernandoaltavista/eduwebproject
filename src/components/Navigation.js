@@ -142,7 +142,7 @@ export default function Navigation({ language, setLanguage, t }) {
         {/* Mobile hamburger */}
         <button
           onClick={toggleMenu}
-          className="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-[60] relative"
+          className="md:hidden flex flex-col justify-center items-center w-10 h-10 space-y-1.5 focus:outline-none z-60 relative"
           aria-label="Toggle menu"
         >
           {!isMenuOpen ? (
